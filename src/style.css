@@ -1,0 +1,154 @@
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.shadow{
+    box-shadow: 1px 1px 10px 1px #cbc9c9;
+}
+
+
+/***************************************************/
+/* تنسيق العنصر الأساسي الذي يحتوي على المحتويات */
+.container {
+    width: 100%; /* يجعل عرض العنصر بنسبة 100% من العنصر الأب */
+    
+    padding: 20px; /* يضيف مسافة داخلية بمقدار 20 بكسل حول جميع جوانب العنصر */
+    background-color: #fff; /* يحدد لون الخلفية للعنصر باللون الأبيض */
+    border-radius: 8px; /* يجعل زوايا العنصر مستديرة بمقدار 8 بكسل */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* يضيف ظلًا للصندوق حول العنصر */
+    
+}
+
+/* تنسيق شريط التنقل */
+.nav {
+    width: 100%; /* يجعل عرض شريط التنقل بنسبة 100% من العنصر الأب */
+    height: 50px; /* يحدد ارتفاع شريط التنقل بـ 50 بكسل */
+    background-color: #fff; /* يحدد لون الخلفية لشريط التنقل باللون الأبيض */
+    border-bottom: 1px solid #ddd; /* يضيف خط حدود سفلي لشريط التنقل */
+    padding: 5px 0; /* يضيف مسافة داخلية عمودية بمقدار 5 بكسل */
+    position: fixed; /* يثبت شريط التنقل في الأعلى */
+    top: 0; /* يحدد موقع شريط التنقل في الأعلى */
+    left: 0; /* يحدد موقع شريط التنقل على اليسار */
+    z-index: 1000; /* يحدد طبقة العرض لشريط التنقل ليكون فوق العناصر الأخرى */
+}
+
+/* تنسيق الأقسام داخل شريط التنقل */
+.nav div {
+    display: flex;
+    padding:0 20px; /* يعرض العناصر داخل الأقسام بنظام الفلكس */
+}
+
+/* تنسيق القسم الأول داخل شريط التنقل */
+.nav div:first-child {
+    flex: 1; /* يدفع القسم الثاني إلى اليمين */
+}
+
+/* تنسيق عناوين شريط التنقل */
+h6 {
+    cursor: pointer; /* يجعل مؤشر الفأرة على شكل اليد عند التحويم */
+    font-size: 18px; /* يحدد حجم الخط بـ 18 بكسل */
+    transition: color 0.3s; /* يضيف تأثير الانتقال على تغيير اللون لمدة 0.3 ثانية */
+    margin-top: 15px; /* يضيف مسافة علوية بمقدار 15 بكسل */
+}
+
+/* تغيير لون عناوين شريط التنقل عند التحويم */
+h6:hover {
+    color: #0099ff; /* يغير لون النص إلى الأزرق عند التحويم */
+}
+
+/* تنسيق أزرار شريط التنقل */
+.buttom {
+    background-color: #007BFF; /* يحدد لون الخلفية بالأزرق */
+    color: white; /* يحدد لون النص بالأبيض */
+    padding: 10px 20px; /* يضيف مسافة داخلية عمودية وأفقية للأزرار */
+    border-radius: 4px; /* يجعل زوايا الأزرار مستديرة بمقدار 4 بكسل */
+    cursor: pointer; /* يجعل مؤشر الفأرة على شكل اليد عند التحويم */
+    transition: background-color 0.3s; /* يضيف تأثير الانتقال على تغيير لون الخلفية لمدة 0.3 ثانية */
+    margin-top: -25px; /* يرفع الأزرار بمقدار 25 بكسل لتقليل ارتفاع شريط التنقل */
+    text-decoration: none;
+    margin-right: 5px;
+    
+}
+
+/* تغيير لون خلفية الأزرار عند التحويم */
+.buttom:hover {
+    background-color: white; /* يغير لون الخلفية إلى الأزرق الداكن عند التحويم */
+    color: #007BFF;
+    text-align: center; /* يضبط النص ليكون في الوسط */
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gotowebsite{
+    position: absolute;
+    margin-top: 3.5px;
+    right: 10px;
+    
+}
+
+
+
+
+
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+ button  {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error{
+   color: red;
+   font-size: 14px;
+   margin: 0;
+   text-align: left;
+}
+
